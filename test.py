@@ -4,17 +4,6 @@ from bs4 import BeautifulSoup
 import difflib
 import time
 
-webpages = [
-    {
-        "url": "http://127.0.0.1:80/DVWA/vulnerabilities/xss_s",
-        "credentials" : {
-            'login_page': ''
-            'username': 'admin',
-            'password': 'password'
-        }
-    }
-]
-
 DRIVER_PATH = '/usr/bin/chromedriver'
 
 service = Service(executable_path=DRIVER_PATH)
